@@ -2,8 +2,5 @@ const express = require('express');
 
 const app = express();
 
-app.get("/", function (request, response) {
-    response.send("Hello world!");
-});
-
+app.use(express.static("public"));
 app.listen(9000);
