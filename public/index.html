@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
+    <form action="/szavazas" method="POST">
 
-    <h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis beatae maiores omnis reprehenderit ullam distinctio doloribus assumenda laudantium delectus asperiores praesentium vel hic eligendi possimus, eveniet architecto, dolores aperiam esse!
-    </h2>
+        <h1> Szavazás</h1>
+        <p>Which is your favourite pet? </p>
         
+        <input type="radio" id="cat" name="animal" value="cat">
+        <label for= "cat">Cat</label><br>
+        <input type="radio" id="dog" name="animal" value="dog">
+        <label for= "dog">Dog</label><br>
+        <input type="radio" id="other" name="animal" value="other">
+        <label for= "other">Other</label><br>
+
+        <input type="submit" value="Submit">
+
+    <form>
 </body>
 </html>
